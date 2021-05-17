@@ -1,10 +1,15 @@
 {
   "name": "lik-utils",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "utils",
-  "main": "./dist/lik-utils .js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:major": "yarn release - --major",
+    "release:minor": "yarn release - --minor",
+    "release:patch": "yarn release - --patch",
+    "release:rc": "yarn release - --type=rc",
+    "release:verify": "yarn release - --type=rc --verbose --test --nopublish --nocleanup"
   },
   "keywords": [
     "typecript",
@@ -13,6 +18,7 @@
   "author": "likanghua<lkh19890913@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "yarn-release": "^1.10.3"
   }
 }
